@@ -1,0 +1,42 @@
+
+
+
+.app {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50);
+    border-radius: 8px;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+}
+.app__img {
+    position: relative;
+}
+
+.app__title {
+    font-family: Dosis-ExtraBold;
+    font-size: 36px;
+    color: #000000;
+}
+.app__mail{
+    
+}
+
+.app p {
+    font-family: Dosis-Medium;
+    font-size: 24px;
+    color: #000000;
+}
+.app--hidden {
+    opacity:0;
+    transform:translate(100%);
+}
+
+.app--expose {
+    opacity: 1;
+    transform: translate(0px);
+    transition: all 1s ease-out;
+}
+
+
