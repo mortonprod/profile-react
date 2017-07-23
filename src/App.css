@@ -1,42 +1,71 @@
-
-
-
-.app {
+.me {
+    position:relative;
     background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50);
     border-radius: 8px;
-    text-align:center;
-    margin:10px;
-    padding:10px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top:150px;
 }
-.app__img {
+.me__img {
     position: relative;
 }
 
-.app__title {
-    font-family: Dosis-ExtraBold;
-    font-size: 36px;
+.me__title {
+    font-family: 'Lobster', cursive;
+    font-size: 4vw;
     color: #000000;
 }
-.app__mail{
+.me__mail{
     
 }
 
-.app p {
-    font-family: Dosis-Medium;
-    font-size: 24px;
+.me p {
+    font-family: Dosis;
+    font-size: 2vw;
     color: #000000;
 }
-.app--hidden {
+.me--hidden {
     opacity:0;
     transform:translate(100%);
 }
 
-.app--expose {
+.me--expose {
     opacity: 1;
     transform: translate(0px);
     transition: all 1s ease-out;
+}
+
+@media (max-width:700px){
+    .me {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .me__title {
+        font-size: 5vw;
+    }
+
+
+    .me p {
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .me__title {
+        font-size: 6vw;
+    }
+
+
+    .me p {
+        font-size: 4vw;
+    }
 }
 
 
