@@ -1,42 +1,130 @@
-
-
-
-.app {
+.me {
+    position: relative;
     background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50);
     border-radius: 8px;
-    text-align:center;
-    margin:10px;
-    padding:10px;
-}
-.app__img {
-    position: relative;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 150px;
+	background-image: radial-gradient(50% 100%, rgba(177,182,254,0.00) 50%, #E3E5FF 100%);
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.50);
+    border-radius: 8px;
 }
 
-.app__title {
-    font-family: Dosis-ExtraBold;
-    font-size: 36px;
+@keyframes inOut{
+    0%{
+        opacity:0
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.me__img {
+    position: relative;
+    width:200px;
+    height:200px;
+    display:block;
+    margin:auto;
+}
+
+.me__img > img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+    opacity:0
+}
+
+.me__img > img:nth-child(1) {
+    animation: 5s out forwards;
+    opacity:1;
+}
+
+.me__img > img:nth-child(2) {
+    animation: 5s inOut forwards;
+    animation-delay: 2.5s;
+}
+
+.me__img > img:nth-child(3) {
+    animation: 5s in forwards;
+    animation-delay: 7.5s;
+}
+
+
+
+.me__title {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
     color: #000000;
 }
-.app__mail{
+.me__mail{
+    width:100px;
+    height:auto;
     
 }
 
-.app p {
-    font-family: Dosis-Medium;
-    font-size: 24px;
+.me p {
+    font-family: Dosis;
+    font-size: 25px;
+    margin:5px;
     color: #000000;
 }
-.app--hidden {
+.me--hidden {
     opacity:0;
     transform:translate(100%);
 }
 
-.app--expose {
+.me--expose {
     opacity: 1;
     transform: translate(0px);
     transition: all 1s ease-out;
+}
+
+@media (max-width:700px) {
+    .me {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .me p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .me p {
+        font-size: 15px;
+    }
+
 }
 
 
