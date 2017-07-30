@@ -27,4 +27,4 @@ This component has been deployed to github pages
 
 You can always see it on my portfolio.
 
-[My portfolio](https://mortonprod.github.io/profile-react/)
+[My portfolio](alexandermorton.co.uk)
