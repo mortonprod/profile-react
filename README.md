@@ -27,4 +27,4 @@ This component has been deployed to github pages
 
 You can always see it on my portfolio.
 
-[My portfolio](alexandermorton.co.uk)
+[My portfolio](https://alexandermorton.co.uk)
